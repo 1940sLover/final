@@ -86,7 +86,7 @@ export default {
       if(this.validZip == true && this.unitEntered == true)
       {
         //use axios to get the api data
-        axios.get(`http://api.openweathermap.org/data/2.5/weather?zip=${this.zip},us&units=${this.tempType}&appid=ba22e6d0902c55d2668bfbf7b49d34d7`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?zip=${this.zip},us&units=${this.tempType}&appid=ba22e6d0902c55d2668bfbf7b49d34d7`)
         .then((res) => {
           //store the api data in a variable
           this.generalInfo = res.data;
